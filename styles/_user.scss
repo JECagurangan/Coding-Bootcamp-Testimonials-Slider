@@ -1,14 +1,40 @@
+.user{
+    position: relative;
+}
 
-.user__name, .user__job{
+.user__tanya, 
+.user__john, 
+.user__job__tanya, 
+.user__job__john{
     display: block;
     text-align: center;
     font-size: 17px;
+
+    transition: opacity 0.8s ease-in-out;
 }
 
-.user__name{
+.user__tanya, .user__john{
     font-weight: 700;
 }
 
-.user__job{
+.user__john{
+    position: absolute;
+    top: 0;
+
+    opacity: 0;
+}
+
+.user__job__tanya, .user__job__john{
     font-weight: 300;
+}
+
+.user__job__john{
+    position: absolute;
+    bottom: 0;
+    left: -45%;
+
+    opacity: 0;
+
+    white-space: nowrap;
+    
 }

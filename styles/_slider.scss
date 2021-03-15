@@ -1,5 +1,8 @@
 .slider{
     position: relative;
+
+    min-width: 253px;
+
     max-width: 253px;
     max-height: 253px;
 
@@ -9,8 +12,24 @@
 }
 
 .slider__tanya{
+    width: 100%;
     max-width: 253px;
+    min-height: 253px;
     max-height: 253px;
+
+    transition: width 0.8s ease-in-out;
+}
+
+.slider__john{
+    position: absolute;
+    right: 0;
+
+    width: 0; //default 0
+    max-width: 253px;
+    min-height: 253px;
+    max-height: 253px;
+
+    transition: width 0.8s ease-in-out;
 }
 
 .slider__bg{

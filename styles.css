@@ -54,6 +54,7 @@ body {
 
 .slider {
   position: relative;
+  min-width: 253px;
   max-width: 253px;
   max-height: 253px;
   margin-bottom: 88px;
@@ -62,8 +63,23 @@ body {
 }
 
 .slider__tanya {
+  width: 100%;
   max-width: 253px;
+  min-height: 253px;
   max-height: 253px;
+  -webkit-transition: width 0.8s ease-in-out;
+  transition: width 0.8s ease-in-out;
+}
+
+.slider__john {
+  position: absolute;
+  right: 0;
+  width: 0;
+  max-width: 253px;
+  min-height: 253px;
+  max-height: 253px;
+  -webkit-transition: width 0.8s ease-in-out;
+  transition: width 0.8s ease-in-out;
 }
 
 .slider__bg {
@@ -107,6 +123,8 @@ body {
 .testimony {
   position: relative;
   margin-bottom: 26px;
+  min-width: 307px;
+  min-height: 132.6px;
 }
 
 .testimony p {
@@ -114,6 +132,20 @@ body {
   font-size: 17px;
   font-weight: 300;
   margin: 0;
+  max-width: 519px;
+}
+
+.testimony__tanya {
+  -webkit-transition: opacity 0.8s ease-in-out;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.testimony__john {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.8s ease-in-out;
+  transition: opacity 0.8s ease-in-out;
 }
 
 .testimony__bg {
@@ -127,17 +159,40 @@ body {
   background-size: cover;
 }
 
-.user__name, .user__job {
+.user {
+  position: relative;
+}
+
+.user__tanya,
+.user__john,
+.user__job__tanya,
+.user__job__john {
   display: block;
   text-align: center;
   font-size: 17px;
+  -webkit-transition: opacity 0.8s ease-in-out;
+  transition: opacity 0.8s ease-in-out;
 }
 
-.user__name {
+.user__tanya, .user__john {
   font-weight: 700;
 }
 
-.user__job {
+.user__john {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+}
+
+.user__job__tanya, .user__job__john {
   font-weight: 300;
+}
+
+.user__job__john {
+  position: absolute;
+  bottom: 0;
+  left: -45%;
+  opacity: 0;
+  white-space: nowrap;
 }
 /*# sourceMappingURL=styles.css.map */
