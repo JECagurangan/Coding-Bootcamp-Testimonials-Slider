@@ -14,7 +14,6 @@ const johnTitle = document.querySelector(".user__job__john");
 const tanyaTitle = document.querySelector(".user__job__tanya");
 
 prevButton.addEventListener("click", function () {
-
   //image
   johnImg.style.width = "0px";
   tanyaImg.style.width = "100%";
@@ -32,7 +31,6 @@ prevButton.addEventListener("click", function () {
 });
 
 nextButton.addEventListener("click", function () {
-
   //image
   tanyaImg.style.width = "0px";
   johnImg.style.width = "100%";

@@ -1,40 +1,41 @@
-.user{
-    position: relative;
+.user {
+  position: relative;
 }
 
-.user__tanya, 
-.user__john, 
-.user__job__tanya, 
-.user__job__john{
-    display: block;
-    text-align: center;
-    font-size: 17px;
+.user__tanya,
+.user__john,
+.user__job__tanya,
+.user__job__john {
+  display: block;
+  text-align: center;
+  font-size: 17px;
 
-    transition: opacity 0.8s ease-in-out;
+  transition: opacity 0.8s ease-in-out;
 }
 
-.user__tanya, .user__john{
-    font-weight: 700;
+.user__tanya,
+.user__john {
+  font-weight: 700;
 }
 
-.user__john{
-    position: absolute;
-    top: 0;
+.user__john {
+  position: absolute;
+  top: 0;
 
-    opacity: 0;
+  opacity: 0;
 }
 
-.user__job__tanya, .user__job__john{
-    font-weight: 300;
+.user__job__tanya,
+.user__job__john {
+  font-weight: 300;
 }
 
-.user__job__john{
-    position: absolute;
-    bottom: 0;
-    left: -45%;
+.user__job__john {
+  position: absolute;
+  bottom: 0;
+  left: -45%;
 
-    opacity: 0;
+  opacity: 0;
 
-    white-space: nowrap;
-    
+  white-space: nowrap;
 }

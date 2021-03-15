@@ -1,46 +1,45 @@
-.testimony{
-    position: relative;
-    margin-bottom: 26px;
+.testimony {
+  position: relative;
+  margin-bottom: 26px;
 
-    min-width: 307px;
-    min-height: 132.6px;
+  min-width: 307px;
+  min-height: 132.6px;
 
+  p {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 300;
+    margin: 0;
+    max-width: 519px;
+  }
 
-    p{
-        text-align: center;
-        font-size: 17px;
-        font-weight: 300;
-        margin: 0;
-        max-width: 519px;
-    }
+  &__tanya {
+    transition: opacity 0.8s ease-in-out;
+  }
 
-    &__tanya{
-        transition: opacity 0.8s ease-in-out;
-    }
-    
-    &__john{
-        position: absolute;
-        top: 0;
+  &__john {
+    position: absolute;
+    top: 0;
 
-        opacity: 0;
-        transition: opacity 0.8s ease-in-out;
-    }
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+  }
 }
 
-.testimony__bg{
-        //positioning
-        position: absolute;
-        top: -27px;
-        right: 40%;
+.testimony__bg {
+  //positioning
+  position: absolute;
+  top: -27px;
+  right: 40%;
 
-        //size
-        width: 60px;
-        height: 50px;
+  //size
+  width: 60px;
+  height: 50px;
 
-        //background
-        background: url(./images/pattern-quotes.svg);
-        background-position: center;
-        background-size: cover;
-    
-        // z-index: -1;
+  //background
+  background: url(./images/pattern-quotes.svg);
+  background-position: center;
+  background-size: cover;
+
+  // z-index: -1;
 }
