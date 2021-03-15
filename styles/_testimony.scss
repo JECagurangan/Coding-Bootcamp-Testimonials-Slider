@@ -1,0 +1,30 @@
+.testimony{
+    position: relative;
+    margin-bottom: 26px;
+
+
+    p{
+        text-align: center;
+        font-size: 17px;
+        font-weight: 300;
+        margin: 0;
+    }
+}
+
+.testimony__bg{
+        //positioning
+        position: absolute;
+        top: -27px;
+        right: 40%;
+
+        //size
+        width: 60px;
+        height: 50px;
+
+        //background
+        background: url(./images/pattern-quotes.svg);
+        background-position: center;
+        background-size: cover;
+    
+        // z-index: -1;
+}
