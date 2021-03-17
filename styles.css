@@ -22,6 +22,17 @@ body {
   position: relative;
 }
 
+@media (min-width: 1440px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .mobile-bg-bottom {
   position: absolute;
   left: 0;
@@ -52,6 +63,55 @@ body {
           justify-content: center;
 }
 
+@media (min-width: 1440px) {
+  .wrapper {
+    padding-top: 113px;
+    padding-bottom: 147px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 570px, 540px;
+        grid-template-columns: 570px, 540px;
+  }
+}
+
+.wrapper__slider-container {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+}
+
+.wrapper__testimony-container {
+  height: 100%;
+  width: 100%;
+  min-width: 568px;
+  max-width: 568px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+}
+
 .slider {
   position: relative;
   min-width: 253px;
@@ -62,13 +122,32 @@ body {
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
+@media (min-width: 1440px) {
+  .slider {
+    min-width: 540px;
+    min-height: 540px;
+    margin-bottom: 0px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
 .slider__tanya {
   width: 100%;
   max-width: 253px;
   min-height: 253px;
   max-height: 253px;
+  border-radius: 5px;
   -webkit-transition: width 0.8s ease-in-out;
   transition: width 0.8s ease-in-out;
+}
+
+@media (min-width: 1440px) {
+  .slider__tanya {
+    max-width: 540px;
+    min-height: 540px;
+  }
 }
 
 .slider__john {
@@ -80,6 +159,13 @@ body {
   max-height: 253px;
   -webkit-transition: width 0.8s ease-in-out;
   transition: width 0.8s ease-in-out;
+}
+
+@media (min-width: 1440px) {
+  .slider__john {
+    max-width: 540px;
+    min-height: 540px;
+  }
 }
 
 .slider__bg {
@@ -94,6 +180,15 @@ body {
   z-index: -1;
 }
 
+@media (min-width: 1440px) {
+  .slider__bg {
+    left: -63px;
+    top: -63px;
+    width: 697px;
+    height: 658px;
+  }
+}
+
 .slider__button {
   position: absolute;
   bottom: -20px;
@@ -101,9 +196,10 @@ body {
   width: 82px;
   height: 40px;
   background-color: white;
-  border: 1px solid black;
   border-radius: 30px;
   padding: 0px 16px;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -113,6 +209,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (min-width: 1440px) {
+  .slider__button {
+    left: 90px;
+  }
 }
 
 .slider__button img {
@@ -127,12 +229,38 @@ body {
   min-height: 132.6px;
 }
 
+@media (min-width: 1440px) {
+  .testimony {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+}
+
 .testimony p {
   text-align: center;
   font-size: 17px;
   font-weight: 300;
   margin: 0;
   max-width: 519px;
+}
+
+@media (min-width: 1440px) {
+  .testimony p {
+    position: absolute;
+    left: 0;
+    min-width: 624px;
+    font-size: 32px;
+    text-align: left;
+  }
 }
 
 .testimony__tanya {
@@ -169,7 +297,7 @@ body {
 .user__job__john {
   display: block;
   text-align: center;
-  font-size: 17px;
+  font-size: 15px;
   -webkit-transition: opacity 0.8s ease-in-out;
   transition: opacity 0.8s ease-in-out;
 }
@@ -187,7 +315,8 @@ body {
 
 .user__job__tanya,
 .user__job__john {
-  font-weight: 300;
+  font-weight: 500;
+  color: #babacf;
 }
 
 .user__job__john {

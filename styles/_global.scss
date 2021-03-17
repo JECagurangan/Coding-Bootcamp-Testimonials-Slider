@@ -19,6 +19,11 @@ body {
   font-family: "Inter", sans-serif;
 
   position: relative;
+
+  @media (min-width: 1440px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .mobile-bg-bottom {
@@ -43,4 +48,38 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media (min-width: 1440px) {
+    padding-top: 113px;
+    padding-bottom: 147px;
+
+    display: grid;
+    grid-template-columns: 570px, 540px;
+  }
+}
+
+.wrapper__slider-container {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  grid-column-start: 2;
+}
+
+.wrapper__testimony-container {
+  height: 100%;
+  width: 100%;
+
+  min-width: 568px;
+  max-width: 568px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  grid-row-start: 1;
 }

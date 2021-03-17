@@ -1,5 +1,9 @@
 .user {
   position: relative;
+
+  @media (min-width: 1440px) {
+    // display: none;
+  }
 }
 
 .user__tanya,
@@ -8,9 +12,12 @@
 .user__job__john {
   display: block;
   text-align: center;
-  font-size: 17px;
+  font-size: 15px;
 
   transition: opacity 0.8s ease-in-out;
+
+  @media (min-width: 1440px) {
+  }
 }
 
 .user__tanya,
@@ -27,7 +34,8 @@
 
 .user__job__tanya,
 .user__job__john {
-  font-weight: 300;
+  font-weight: 500;
+  color: $gr-blue;
 }
 
 .user__job__john {
