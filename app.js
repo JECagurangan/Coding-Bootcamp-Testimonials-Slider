@@ -23,9 +23,13 @@ prevButton.addEventListener("click", function () {
   johnTestimony.style.opacity = "0";
 
   //user
+  // tanya.style.display = "inline";
+  // tanyaTitle.style.display = "inline";
   tanya.style.opacity = "1";
   tanyaTitle.style.opacity = "1";
 
+  // john.style.display = "none";
+  // johnTitle.style.display = "none";
   john.style.opacity = "0";
   johnTitle.style.opacity = "0";
 });
@@ -40,9 +44,13 @@ nextButton.addEventListener("click", function () {
   johnTestimony.style.opacity = "1";
 
   //user
+  // tanya.style.display = "none";
+  // tanyaTitle.style.display = "none";
   tanya.style.opacity = "0";
   tanyaTitle.style.opacity = "0";
 
+  // john.style.display = "inline";
+  // johnTitle.style.display = "inline";
   john.style.opacity = "1";
   johnTitle.style.opacity = "1";
 });

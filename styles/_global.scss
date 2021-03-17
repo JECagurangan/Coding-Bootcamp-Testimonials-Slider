@@ -33,6 +33,11 @@ body {
   width: 270px;
   height: 74px;
 
+  @media (min-width: 1440px) {
+    width: 604px;
+    height: 152px;
+  }
+
   z-index: -1;
 }
 
@@ -59,27 +64,31 @@ body {
 }
 
 .wrapper__slider-container {
-  height: 100%;
-  width: 100%;
+  @media (min-width: 1440px) {
+    height: 100%;
+    width: 100%;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  grid-column-start: 2;
+    grid-column-start: 2;
+  }
 }
 
 .wrapper__testimony-container {
-  height: 100%;
-  width: 100%;
+  @media (min-width: 1440px) {
+    height: 100%;
+    width: 100%;
 
-  min-width: 568px;
-  max-width: 568px;
+    min-width: 568px;
+    max-width: 568px;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 
-  grid-row-start: 1;
+    grid-row-start: 1;
+  }
 }

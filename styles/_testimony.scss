@@ -2,7 +2,6 @@
   position: relative;
   margin-bottom: 26px;
 
-  min-width: 307px;
   min-height: 132.6px;
 
   @media (min-width: 1440px) {
@@ -10,9 +9,10 @@
     // display: none;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 
     width: 100%;
+    margin-bottom: 53px;
   }
 
   p {
@@ -23,10 +23,7 @@
     max-width: 519px;
 
     @media (min-width: 1440px) {
-      position: absolute;
-      left: 0;
-
-      min-width: 624px;
+      min-width: 637px;
       font-size: 32px;
       text-align: left;
     }
@@ -49,11 +46,21 @@
   //positioning
   position: absolute;
   top: -27px;
-  right: 40%;
+  left: 50%;
+  transform: translate(-50%);
 
   //size
   width: 60px;
   height: 50px;
+
+  @media (min-width: 1440px) {
+    top: -68px;
+    left: 21%;
+    transform: translate(-21%);
+
+    width: 122px;
+    height: 100px;
+  }
 
   //background
   background: url(./images/pattern-quotes.svg);
